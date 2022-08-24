@@ -12,7 +12,7 @@
                                   overlays = [ (import ./nix/overlay.nix) ]; };
       in rec {
         packages = rec {
-          inherit (pkgs) pytypes;
+          inherit (pkgs) python39Packages python310Packages;
         };
 
         devShell = pkgs.stdenv.mkDerivation {
