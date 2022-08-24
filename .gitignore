@@ -2,3 +2,4 @@
 .ropeproject
 *~
 flake.lock
+__pycache__
