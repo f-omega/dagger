@@ -15,6 +15,8 @@
           inherit (pkgs) python39Packages python310Packages;
         };
 
+        overlays.default = import ./nix/overlay.nix;
+
         devShell = pkgs.stdenv.mkDerivation {
           name = "dagger-shell";
 
