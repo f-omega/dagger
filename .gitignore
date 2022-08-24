@@ -1,0 +1,4 @@
+.direnv
+.ropeproject
+*~
+flake.lock
